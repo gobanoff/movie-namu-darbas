@@ -34,12 +34,11 @@ function forw() {
 
 function back() {
   if (pageCount <= 1) prev.setAttribute("disabled");
-  //if (pageCount = 30)pages.innerText =pageCount-1 ;
 
   getData();
 
   pageCount--;
-  pages.innerText = pageCount ;
+  pages.innerText = pageCount;
 }
 function getFace() {
   fetch("https://www.omdbapi.com/?apikey=91486a0e&s=marvel")
