@@ -1,0 +1,44 @@
+body {
+  background-color: rgba(204, 224, 224, 0.381);
+}
+
+.film img {
+  width: 200px;
+  box-shadow: 5px 5px 11px 1px #000;
+}
+.row {
+  gap: 30px;
+  padding-top: 60px;
+  padding-left: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: (2);
+  width: 1800px;
+}
+.film h3 {
+  font-size: 18px;
+  color: rgb(180, 158, 20);
+  padding-top: 15px;
+}
+.page-link {
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+ul {
+  margin-left: 810px;
+  margin-top: 40px;
+}
+#pages {
+  background-color: red;
+  border-radius: 5px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  width: 45px;
+}
+.pagination {
+  gap: 5px;
+}
