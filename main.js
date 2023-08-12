@@ -1,4 +1,3 @@
-
 function getData() {
   fetch(`https://www.omdbapi.com/?apikey=91486a0e&s=marvel&page=${pageCount}`)
     .then((resp) => resp.json())
@@ -28,9 +27,9 @@ const result = document.getElementById("result");
 
 function forw() {
   if (pageCount >= 31) next.setAttribute("disabled");
- getData();
+  getData();
   pageCount++;
-  pages.innerText = pageCount-1;
+  pages.innerText = pageCount - 1;
 }
 
 function back() {
@@ -40,7 +39,7 @@ function back() {
   getData();
 
   pageCount--;
-  pages.innerText = pageCount+1;
+  pages.innerText = pageCount + 1;
 }
 function getFace() {
   fetch("https://www.omdbapi.com/?apikey=91486a0e&s=marvel")
